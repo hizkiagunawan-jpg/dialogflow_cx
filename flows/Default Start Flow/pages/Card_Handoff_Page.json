@@ -1,0 +1,42 @@
+{
+  "name": "4addcdde-65b7-47be-acc5-ae6f9750689d",
+  "displayName": "Card_Handoff_Page",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "All right. I will connect you to our Jago Card specialist team to check the delivery status of your physical debit card. Please wait a moment." ]
+      },
+      "languageCode": "en"
+    }, {
+      "liveAgentHandoff": {
+        "metadata": {
+          "action": "HUMAN_ESCALATION",
+          "l0_team": "CS_Operations",
+          "l1_product": "Card_Management",
+          "l2_category": "Card_Replacement_Or_Block",
+          "sharia_parameter": "Wadiah_Linked_Card"
+        }
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "Baik, Kak. Saya akan segera menghubungkan Kakak ke tim spesialis Jago Card untuk mengecek status pengiriman kartu debit fisik Kakak. Mohon tunggu sebentar, ya." ]
+      },
+      "languageCode": "id"
+    }, {
+      "liveAgentHandoff": {
+        "metadata": {
+          "action": "HUMAN_ESCALATION",
+          "l0_team": "CS_Operations",
+          "l1_product": "Card_Management",
+          "l2_category": "Card_Replacement_Or_Block",
+          "sharia_parameter": "Wadiah_Linked_Card"
+        }
+      },
+      "languageCode": "id"
+    } ]
+  }
+}

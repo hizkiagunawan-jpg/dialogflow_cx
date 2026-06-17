@@ -1,0 +1,120 @@
+{
+  "name": "c685d610-5042-4fec-b6c5-4803f69550e0",
+  "displayName": "Intent/Taxonomy_Router",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "jago.taxonomy.card_delivery",
+    "condition": "$session.params.chosen_issue = card OR $session.params.chosen_issue : card OR $session.params.chosen_issue = kartu OR $session.params.chosen_issue : kartu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Card_Handoff_Page",
+    "name": "0a51ade2-0521-4b92-9188-507465880959"
+  }, {
+    "intent": "jago.taxonomy.qris_dispute",
+    "condition": "$session.params.chosen_issue = qris OR $session.params.chosen_issue : qris",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "QRIS_Handoff_Page",
+    "name": "e30965bf-0b51-4a1d-8578-634198a223e5"
+  }, {
+    "intent": "jago.taxonomy.gojek_failed",
+    "condition": "$session.params.chosen_issue = gojek OR $session.params.chosen_issue : gojek OR $session.params.chosen_issue = gopay OR $session.params.chosen_issue : gopay",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Gojek_Handoff_Page",
+    "name": "a68c02f4-9953-46d6-b8e0-5ad3f79e3dac"
+  }, {
+    "intent": "jago.taxonomy.transfer_failed",
+    "condition": "$session.params.chosen_issue = transfer OR $session.params.chosen_issue : transfer OR $session.params.chosen_issue = bi-fast OR $session.params.chosen_issue : bi-fast",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer_Handoff_Page",
+    "name": "1dd05506-994f-435e-972d-0f6da3129a6e"
+  }, {
+    "condition": "$session.params.chosen_issue = null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ask_Issue_Page",
+    "name": "f58244ae-c98a-45d0-b24d-73148f908bae"
+  }, {
+    "condition": "$session.params.chosen_issue = qris",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "QRIS_Handoff_Page",
+    "name": "46f3be0d-be20-45a4-aace-800850c33a20"
+  }, {
+    "condition": "$session.params.chosen_issue = card OR $session.params.chosen_issue = kartu",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Card_Handoff_Page",
+    "name": "42272b4d-1153-4cb0-80ef-0aaf822ee634"
+  }, {
+    "condition": "$session.params.chosen_issue = gojek OR $session.params.chosen_issue = gofood OR $session.params.chosen_issue = gopay",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Gojek_Handoff_Page",
+    "name": "5c252879-3932-4ee7-aa2f-a7876dc308e2"
+  }, {
+    "condition": "$session.params.chosen_issue = transfer OR $session.params.chosen_issue = uang OR $session.params.chosen_issue = kirim OR $session.params.chosen_issue = duit",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Transfer_Handoff_Page",
+    "name": "e7c871c2-996c-4e0f-8e7c-beb1246b1ebf"
+  }, {
+    "condition": "$session.params.chosen_issue = deposito",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Deposito_Handoff_Page",
+    "name": "de4c593b-d4f8-4a07-a4d1-a31f5b68841b"
+  }, {
+    "condition": "$session.params.chosen_issue = rdn",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "RDN_Handoff_Page",
+    "name": "787a57cc-10c6-461f-ac7e-88af6bd88755"
+  }, {
+    "condition": "$session.params.chosen_issue = kantong_bersama",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Kantong_Bersama_Handoff_Page",
+    "name": "43a5a104-0cd4-4445-9679-5ba0d3d6e151"
+  }, {
+    "condition": "$session.params.chosen_issue = kantong_berbagi",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Kantong_Berbagi_Handoff_Page",
+    "name": "6cede23f-4428-486e-8630-386f89ca4d04"
+  }, {
+    "condition": "$session.params.chosen_issue = jago_amal",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Jago_Amal_Handoff_Page",
+    "name": "2e9c6d64-2fd3-4e92-9b94-fc37970201f3"
+  }, {
+    "condition": "$session.params.chosen_issue = account_core",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Account_Core_Handoff_Page",
+    "name": "ef975dce-cb5b-45fd-95bf-720f0c8cea2d"
+  } ]
+}
